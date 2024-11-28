@@ -33,3 +33,10 @@ The zxinfo_games alias points to the current in use index, in this case it's 'zx
 curl -GET 'http://localhost:9200/_cat/indices'
 curl -XDELETE http://localhost:9200/zxinfo-20220830-131257
 ```
+
+## TIPS & TRICKS
+Remove file wrongly commited (e.g. large file)
+
+```
+git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch import/zxinfo_games.analyzers.txt" HEAD
+```

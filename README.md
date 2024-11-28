@@ -16,6 +16,8 @@ docker-compose up -d
 docker compose up -d
 ````
 
+Get a copy of latest export files - or simply unzip the file 'import_files.zip'
+
 ## Elasticsearch cleanup
 It is important to cleanup indices in Elasticsearch, as new ones are create with every update.
 

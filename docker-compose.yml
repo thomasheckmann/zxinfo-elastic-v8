@@ -1,0 +1,5 @@
+services:
+  zxinfo-es:
+    image: "blacktop/elasticsearch:8.1"
+    ports:
+      - "9200:9200"

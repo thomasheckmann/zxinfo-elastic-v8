@@ -16,7 +16,23 @@ docker-compose up -d
 docker compose up -d
 ````
 
+## import from scratch
+````
+cd import
+
+# install 'elasticdump'
+npm install
+
 Get a copy of latest export files - or simply unzip the file 'import_files.zip'
+
+./import_zxinfo.sh
+./import_magazines.sh
+
+
+curl http://localhost:9200/zxinfo_games/_doc/0002259 | jq
+curl http://localhost:9200/zxinfo_magazines/_doc/0000051 | jq
+````
+
 
 ## Elasticsearch cleanup
 It is important to cleanup indices in Elasticsearch, as new ones are create with every update.
